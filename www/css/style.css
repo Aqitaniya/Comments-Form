@@ -1,0 +1,117 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+body {
+    background-color: #B7FFE9;
+    margin-bottom: 60px;
+}
+footer,
+header{
+    background-color: #412C84;
+    height: 80px;
+}
+header{
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1030;
+}
+.page-title{
+    color:#ffffff;
+    font: 400% 'Lobster', cursive;
+}
+main{
+    margin-top:80px;
+    padding:20px 0;
+}
+form{
+    background-color: #D2F700;
+    border: 3px solid #412C84;
+    border-radius: 15%;
+    padding: 5%;
+}
+.form-name{
+    color:#412C84;
+    font: 250% 'Lobster', cursive;
+    text-align: center;
+}
+.error{
+    color: red;
+}
+textarea {
+    resize: vertical;
+}
+#inputFile{
+    display: none;
+}
+#inputSubmit{
+    background-color: #412C84;
+    color: #ffffff;
+    margin-top: 20px;
+    float: right;
+}
+#inputBtnFile{
+    margin-bottom: 23px;
+}
+#helpBlockFile{
+    clear: both;
+}
+.comments{
+    margin-top: 20px;
+    clear:both;
+}
+.comment-data{
+    border: 3px solid #412C84;
+    border-radius: 15px;
+    margin: 10px auto;
+    padding: 10px;
+}
+.comment-id-title,
+.comment-id,
+.comment-date,
+.author-fullName-title,
+.author-email-title{
+    color: #a5b2b9;
+    font-size: 12px;
+    font-weight: 500;
+}
+.author-fullName,
+.author-email{
+    color:#412C84;
+    font: 100% 'Lobster', cursive;
+}
+.comment-content{
+    margin-top: 10px;
+}
+.comment-date{
+    float:right;
+}
+.comment-info-author{
+    clear: both;
+}
+footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 530px) {
+    #inputFileName{
+        width: 75%;
+    }
+}
+@media (max-width: 430px) {
+    #inputFileName{
+        width: 68%;
+    }
+}
+@media (max-width: 340px) {
+    #inputFileName{
+        width: 100%;
+    }
+    .author-email-content{
+        display: flex;
+    }
+}
